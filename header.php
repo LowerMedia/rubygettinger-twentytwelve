@@ -33,6 +33,24 @@
 
 <body <?php body_class(); ?>>
 	
+	<div id="topBar" class="topBar">   
+    	<ul id='social-media-menu' class='social-media-menu'> 	 
+    		<li><a href="https://www.facebook.com/RubysOfficialpage" target="_blank"><img alt="" src="http://rubygettinger.net/wp-content/uploads/2013/08/facebook.png"/></a></li>  
+            <li><a href="http://twitter.com/RubyGettinger_" target="_blank"><img alt="" src="http://rubygettinger.net/wp-content/uploads/2013/08/twitter.png" /></a></li>  
+            <li><a href="http://instagram.com/rubygettinger/" target="_blank"><img alt="" src="http://rubygettinger.net/wp-content/uploads/2013/08/instagram.png" /></a></li> 		 
+            <li><a href="http://www.youtube.com/writerubygettinger" target="_blank"><img alt="" src="http://rubygettinger.net/wp-content/uploads/2013/08/youtube.png" /></a></li>  
+            <li><a href="http://pinterest.com/rubygettinger/" target="_blank"><img alt="" src="http://rubygettinger.net/wp-content/uploads/2013/08/pinterest.png" /></a></li> 	 
+            <li><a href="http://www.whosay.com/rubygettinger" target="_blank"><img alt="" src="http://rubygettinger.net/wp-content/uploads/2013/08/whosay.png" /></a></li> 	 
+            <li><a href="http://www.linkedin.com/pub/ruby-gettinger/28/4a4/468" target="_blank"><img alt="" src="http://rubygettinger.net/wp-content/uploads/2013/08/linkedin.png" /></a></li>  
+        </ul> 
+    </div> 
+	<div id='site-image-hold' class='site-image-hold'>
+		<div id='site-image-wrap' class='site-image-wrap'>
+		<?php if ( get_header_image() ) : ?>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
+		<?php endif; ?>
+		</div>
+	</div>
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
@@ -46,9 +64,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 
-		<?php if ( get_header_image() ) : ?>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
-		<?php endif; ?>
+
 	</header><!-- #masthead -->
 <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow("homepage",""); } ?>
 	<div id="main" class="wrapper">
