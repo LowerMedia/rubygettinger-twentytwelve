@@ -68,5 +68,14 @@
 
 
 		</header><!-- #masthead -->
-	<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow("homepage",""); } ?>
+	<?php 
+
+		if(is_front_page()){
+			if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow("homepage",""); }
+		}else{
+			?><div id='noslider-spacer' class='noslider-spacer'></div><?php
+		}
+
+
+	?>
 		<div id="main" class="wrapper">

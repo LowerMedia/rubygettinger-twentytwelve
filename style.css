@@ -314,7 +314,7 @@
 	}
 /*---------- SLIDER ----------*/
 
-
+.noslider-spacer {display:block;height:150px;}
 .meteor-slides .mslide img {width: 100%;}
 
 /*---------- FOOTER ----------*/
