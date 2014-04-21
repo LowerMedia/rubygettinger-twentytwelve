@@ -158,12 +158,12 @@
 	}
 
 	body .site {
-		text-align: center;
+		/*text-align: center;
 		clear: both;
 		margin: auto;
 		width: 62%;
 		margin-top:-246px;
-		box-shadow: 2px 2px 5px #CCC;
+		box-shadow: 2px 2px 5px #CCC;*/
 		box-shadow: 1px 2px 7px #CCC;
 	}
 
