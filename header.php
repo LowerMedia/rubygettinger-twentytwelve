@@ -68,5 +68,5 @@
 
 
 		</header><!-- #masthead -->
-	<?php #if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow("homepage",""); } ?>
+	<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow("homepage",""); } ?>
 		<div id="main" class="wrapper">
