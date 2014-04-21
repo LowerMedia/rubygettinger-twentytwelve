@@ -1,0 +1,53 @@
+/*
+ Theme Name:   Ruby Gettinger Twenty Twelve Child
+ Theme URI:    http://rubygettinger.net/
+ Description:  Twenty Twelve Child Theme
+ Author:       Pete Lower
+ Author URI:   http://petelower.com
+ Template:     twentytwelve
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-twelve-child
+*/
+
+@import url("../twentytwelve/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+
+
+/*---------- h(#)/a/p ----------*/
+
+.site-header h1 {text-align:center;}
+
+/*---------- HTML/BODY/wrap ----------*/
+
+body {
+		background-image: url('');
+		background-repeat: repeat;
+		background-position: top left;
+		background-attachment: scroll;
+	}
+
+/*---------- HEADER ----------*/
+
+/*---------- MENUS ----------*/
+
+	/*---------- SOCIAL MEDIA NAV STYLES ----------*/
+
+/*---------- CONTENT ----------*/
+
+/*---------- SLIDER ----------*/
+
+/*---------- FOOTER ----------*/
+
+
+
+
+/*----------BELOW IS CODE THAT NEEDS TO BE REORGANIZED----------*/
+
+
+
+
+
