@@ -24,10 +24,11 @@
 /*---------- HTML/BODY/wrap ----------*/
 
 body {
-		background-image: url('');
+		background-image: url("http://rubygettinger.net/wp-content/uploads/2013/11/ruby_background_faith_emotional_god_physical_trust_dream_powerful_hope_outlines.png");
 		background-repeat: repeat;
 		background-position: top left;
 		background-attachment: scroll;
+		background-color:white;
 	}
 
 /*---------- HEADER ----------*/
