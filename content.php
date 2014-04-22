@@ -17,20 +17,42 @@
 		</div>
 		<?php endif; ?>
 		<header class="entry-header">
-			<?php 
+			
+
+			<?php
+			/*
+			#
+			#	POST TITLE
+			#
+			*/ if ( is_single() ) : ?>
+				<h1 class="entry-title">
+					<?php the_title(); ?>
+				</h1>
+			<?php else : ?>
+				<h1 class="entry-title">
+					<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+				</h1>
+			<?php endif; // is_single() ?>
+			
+			
+			<?php
+			/*
+			#
+			#	POST THUMBNAIL
+			#
+			*/ 
 				if ( ! post_password_required() && ! is_attachment() ) :
+					//show post thumbnail if is blogroll page
 					if ( is_category() || is_archive() ) {the_post_thumbnail('thumbnail');}
 				endif; 
 			?>
-
-			<?php if ( is_single() ) : ?>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<?php else : ?>
-			<h1 class="entry-title">
-				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-			</h1>
-			<?php endif; // is_single() ?>
-			<?php if ( comments_open() ) : ?>
+			
+			<?php
+			/*
+			#
+			#	POST COMMENTS
+			#
+			*/ if ( comments_open() ) : ?>
 				<div class="comments-link">
 					<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentytwelve' ) . '</span>', __( '1 Reply', 'twentytwelve' ), __( '% Replies', 'twentytwelve' ) ); ?>
 				</div><!-- .comments-link -->
@@ -43,8 +65,12 @@
 		</div><!-- .entry-summary -->
 		<?php else : ?>
 		<div class="entry-content">
-			<?php #the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
-			<?php 
+			<?php
+			/*
+			#
+			#	POST CONTENT
+			#
+			*/ #the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); 
 					if ( is_category() || is_archive() ) {
 						the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) );
 					} else {
