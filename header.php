@@ -28,6 +28,10 @@
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
+<style>
+@import url("<?php bloginfo('template_url'); ?>/style.css");
+@import url("<?php bloginfo('stylesheet_url'); ?>");
+</style>
 <?php wp_head(); ?>
 </head>
 
