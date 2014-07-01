@@ -503,3 +503,45 @@ img.attachment-thumbnail {
 .post-meta {
 	display: none;
 }
+
+
+
+.archive-title, .page-title, .widget-title, .entry-content th, .comment-content th {
+	font-size: 1.25rem;
+}
+
+body .site {
+	margin-bottom: 0;
+}
+
+.archive-header, .page-header {
+	display: none;
+}
+
+.entry-header .entry-title {
+	font-size: 2rem;
+}
+
+footer.entry-meta {
+	display: none;
+}
+
+.leave-reply {
+	display: none;
+}
+
+.nav-single {
+	font-size: 1rem;
+}
+
+.entry-content, .entry-summary, .mu_register {
+	font-size: 1rem;
+}
+
+.entry-header {
+	margin-bottom: 0;
+}
+
+.site-content article {
+	margin-bottom: 0;
+}
