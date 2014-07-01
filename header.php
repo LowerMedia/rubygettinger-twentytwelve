@@ -51,10 +51,8 @@
     </div> 
 
 	<div id='site-image-hold' class='site-image-hold'>
-		<div id='site-image-wrap' class='site-image-wrap'>
-		<?php if ( get_header_image() ) : ?>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
-		<?php endif; ?>
+		<div class='site-image-wrap' id='site-image-wrap'>
+		<img class="header-image" title="Ruby Gettinger Christian Fitness Personality" src="<?php echo get_stylesheet_directory_uri() ?>cropped-ruby-gettinger-reality-star-weight-loss.png" width="300" height="250" alt="">
 		</div>
 	</div>
 

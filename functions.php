@@ -1,4 +1,7 @@
 <?php
+//REMOVE CUSTOME HEADER OPTIONS AS WE HAVE IT MANUALLY PLACED IN THE HEADER TO DECREASE LOAD TIMES
+remove_theme_support( 'custom-header' );
+
 // Add excerpts to Meteor Slides
 add_post_type_support('slide', 'excerpt');
 
